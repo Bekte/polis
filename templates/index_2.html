@@ -1,0 +1,810 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi">
+  <title>Ош ZYAN маркетинг</title>
+  <link rel="icon" type="image/png" href="{% 'images/favicon.png' %}">
+  <link rel="stylesheet" href="{%'css/font-awesome-pro.css'%}">
+  <link rel="stylesheet" href="{%'css/bootstrap.min.css '%}">
+  <link rel="stylesheet" href="{%'css/scroll_button.css '%} ">
+  <link rel="stylesheet" href="{%'css/spacing.css '%} ">
+  <link rel="stylesheet" href="{%' css/plugin.css '%}">
+  <link rel="stylesheet" href="{%'css/style.css'%} ">
+  <link rel="stylesheet" href="{%' css/responsive.css '%}">
+</head>
+
+
+<body class="home_2">
+  <!--================================
+      ПРЕДВАРИТЕЛЬНЫЙ СТАРТ
+    =================================-->
+  <div class="preloader">
+    <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+      <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+    </svg>
+    <h5 class="preloader-text">Загрузка</h5>
+  </div>
+  <!--================================
+       ПРЕДВАРИТЕЛЬНЫЙ КОНЕЦ
+    =================================-->
+    <!--================================
+        КНОПКА ПРОКРУТКИ СТАРТ
+    =================================-->
+    
+     
+ </li>
+      <li>
+        <a class="list-group-item list-group-item-action text_hover_animaiton" href="#about">
+          <span><img src="{%' svg/clipboard.svg '%} " alt="icon" class="img-fluid w-100 svg"></span>О нас
+        </a>
+      </li>
+      <li>
+        <a class="list-group-item list-group-item-action text_hover_animaiton" href="#service">
+          <span><img src="{%' svg/briefcase.svg'%} " alt="icon" class="img-fluid w-100 svg"></span>
+          Услуги
+        </a>
+      </li>
+      <li>
+        <a class="list-group-item list-group-item-action text_hover_animaiton" href="#portfolio">
+          <span><img src="{%' svg/messages-1.svg'%} " alt="icon" class="img-fluid w-100 svg"></span>
+          Товары
+        </a>
+      </li>
+      <li>
+        <a class="list-group-item list-group-item-action text_hover_animaiton" href="#blog">
+          <span><img src="{%'svg/quote-down-square.svg'%} " alt="icon" class="img-fluid w-100 svg"></span>
+          Блог
+        </a>
+      </li>
+      <li>
+        <a class="list-group-item list-group-item-action text_hover_animaiton" href="#contact">
+          <span><img src=" {%' svg/user-square.svg '%} " alt="icon" class="img-fluid w-100 svg"></span>
+          Контакты
+        </a>
+        <a class="list-group-item list-group-item-action text_hover_animaiton" href="https://oshtu.kg/">
+          <span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="img-fluid w-100 svg replaced-svg">
+              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 12V21" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 12L4 9" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20 9L12 12" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4 15H20" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            
+          </span>
+          Наш университет
+        </a>
+        <a class="list-group-item list-group-item-action text_hover_animaiton" href="http://portal.oshtu.kg/#/login">
+          <span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="img-fluid w-100 svg replaced-svg">
+              <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 12V21" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 12L4 9" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M20 9L12 12" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4 15H20" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          Портал UNIVER
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!--================================
+        КНОПКА ПРОКРУТКИ КОНЕЦ
+    =================================-->
+    
+
+  <div class="main">
+    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example"
+      tabindex="0">
+      <!--================================
+                БАНЕР СТАРТ
+            =================================-->
+      <section id="banner" class="tf__banner_2 banner" style="background: url('{{main.photo.url}}')">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-xxl-6 col-md-9 col-lg-7">
+              <div class="tf__banner_text">
+                <h1>
+                  {{ main.title }}
+                  <span class="cd-headline rotate-1">
+                    <span class="cd-words-wrapper">
+                      <b class="is-visible">{{main.description}}</b>
+                      <b>Ош ZYAN</b>
+                      <b>{{main.description2}}</b>
+                    </span>
+                  </span>
+                </h1>
+                
+                <p>
+                  {{ main.sub_description }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--================================
+                БАНЕР  КОНЕЦ
+            =================================-->
+ 
+      <!--================================
+                О нас 1 START
+            =================================-->
+      <section id="about" class="tf__about_2 pt_130 xs_pt_80">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-9 col-lg-9">
+              <div class="tf__section_heading mb_40">
+                <h5 class="has-animation">{{abouts.about}}</h5>
+                <h2 class="has-animation">
+                  {{ abouts.more }}
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-between">
+            
+            <div class="col-xl-6 col-lg-6">
+              <div class="tf__about_text_2">
+                <ul>
+                  {% for about in about_pro %}
+                  <li>
+                    
+                    <div class="top fade_bottom" data-trigerId="about">
+                      <div class="img">
+                        <img src="{{about.photo.url}}" alt="about" class="img-fluid w-100">
+                      </div>
+                      <div>
+                        <h3>{{ about.ambitious }}</h3>
+                        <p>
+                          {{ about.ambitious_description }}
+                        </p>
+                      </div>
+                    </div>
+                    
+                  </li>  
+                  {% endfor %}                
+                </ul>
+              </div>
+            </div>
+            
+            {% for photos in about_pro_photo %}
+            <div class="col-xl-6 col-lg-6">
+              <div class="tf__about_img tf__about_img_2">
+                <img src="{{ photos.photo.url }}" alt="ZYAN" class="img-fluid w-100">
+                <div class="tf__about_img_text">
+                  <i class="fa-sharp fa-solid fa-award"></i>
+                  <h4>{{photos.year_of_experience}}+ <span>{{photos.picture_description}}</span></h4>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+               
+          </div>
+        </div>
+  
+      </section>
+      <!--================================
+                О нас 1 END
+            =================================-->
+            <!--================================
+        О НАС 2 START
+    =================================-->
+    <section class="tf__about pt_140 xs_pt_80" id="about">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-xxl-7 col-lg-6 col-xl-6">
+            <div class="tf__section_heading pb_80 xs_pb_50">
+              <h5 class="has-animation">{{about_photos.about_about}}</h5>
+              <h2 class="has-animation">
+                {{about_photos.about_experts}}
+              </h2>
+            </div>
+            <div class="tf__about_text">
+              <p>
+                {{about_photos.about_experts_description}}  
+              </p>
+            </div>
+          </div>
+          {% for img in experts %}
+          <div class="col-xxl-4 col-lg-6 col-xl-6">
+            <div class="tf__about_img fade_right" data-trigerId="about">
+              <img
+                src=" {{ img.photo_experts.url }}"
+                alt="ZYAN"
+                class="img-fluid w-100"
+              />
+              <div class="tf__about_img_text">
+                <i class="fas fa-chart-pie-alt"></i>
+                <div class="tf__about_content">
+                  <h4>{{img.experts}}</h4>
+                  <p>{{img.experts_description}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+    <!--================================
+        О НАС 2 END
+    =================================-->
+     <!--============================
+    НАЧАЛО СЧЁТЧИКОВ
+==============================-->
+<section class="tf__counter tf__counter_2 pt_190" id="portfolio">
+  <div class="container">
+    <div class="row justify-content-between">
+      <!-- Счётчик участников команды -->
+      <div class="col-xxl-3 col-md-6 col-xl-3">
+        <div
+          class="tf__single_counter tf__single_counter_2"
+          data-animation="fade-left"
+          data-offset="100"
+          style="font-size: 36px;" <!-- Увеличение размера шрифта -->
+        >
+        {% for participent in participent_numbers %}
+          <h5 class="tf__counter_icon tf__counter_icon_2" style="font-size: 100px;"> <!-- Увеличение размера иконки -->
+            <i class="fas fa-users-cog" aria-hidden="true"></i> <!-- Иконка -->
+          </h5>
+          <h4><span class="counter" style="font-size: 60px;">{{ participent_numbers|length}}</span>+</h4> <!-- Увеличение размера цифр -->
+          <p>{{ participent.title }}</p>
+        {% endfor %}
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--============================
+    КОНЕЦ СЧЁТЧИКОВ
+==============================-->
+<!--============================
+    НАША ПОМОЩЬ НАЧАЛО
+==============================-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serving Our Clients</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css'%}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #202A44;
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+        .header {
+            font-size: 72px; /* Увеличен размер шрифта */
+            margin-bottom: 40px;
+        }
+        .icons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .icon-item {
+            flex: 1 1 calc(20% - 40px);
+            min-width: 120px;
+            margin: 10px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .icon-item i {
+            font-size: 40px;
+            margin-bottom: 10px;
+            transition: color 0.3s;
+        }
+        .icon-item p {
+            margin: 0;
+        }
+        .icon-item:hover {
+            background-color: #1A73E8;
+        }
+        .icon-item:hover i {
+            color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">{{help_marketing.title}}</div>
+        
+        <div class="icons">
+          {% for icon in picture_marketing %}
+            <div class="icon-item">
+                <i class="{{icon.icon_class}}"></i>
+                <p>{{icon.title}}</p>
+            </div>
+            {% endfor %}
+            </div>
+        
+    </div>
+  </div>
+</body>
+</html>
+<!--============================
+    НАША ПОМОЩЬ КОНЕЦ
+==============================-->
+
+
+             <!--================================
+                НАШЕ НАВЫКИ И СТРАТЕГИИ START
+            =================================-->
+        <section
+        id="skills"
+        class="tf__skills_2 pt_115 xs_pt_75 pb_120 xs_pb_80 mt_165 xs_mt_80"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-9 col-lg-9 m-auto">
+              <div class="tf__section_heading mb_30">
+                <h5 class="has-animation">{{marketing_head.marketing_strategy}}</h5>
+                <h2 class="has-animation">
+                  {{ marketing_head.elements_of_marketing }}
+                </h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xxl-8 col-xl-10 m-auto">
+              <ul class="nav nav-pills mb_30" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-home"
+                  role="tabpanel"
+                  aria-labelledby="pills-home-tab"
+                  tabindex="0"
+                >
+                  <div class="row">
+                    {% for lines in marketing_box %}
+
+                    <div class="col-xl-6 col-lg-6">
+                      <div
+                        class="tf__single_skill_2 fade_bottom"
+                        data-trigerId="skills"
+                      >
+                        <h3>{{lines.head_marketing}}</h3>
+                        <h2>{{lines.head_marketing_description }}</h2>
+                        <h4>{{ lines.head_marketing_subdescription }}</h4>
+                        <p>
+                          {{lines.head_marketing_text}}
+                        </p>
+                        <div class="tf__team_skills_bar_single">
+                          <p>{{lines.evaluation_of_company}}</p>
+                          <div id="bar1" class="barfiller">
+                            <div class="tipWrap">
+                              <span class="tip"></span>
+                            </div>
+                            <span class="fill" data-percentage="80"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    {% endfor %}
+                  </div>
+
+                    <div class="col-xl-6 col-lg-6">
+                      <div
+                        class="tf__single_skill_2 fade_bottom"
+                        data-trigerId="skills"
+                      >
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="pills-profile-tab"
+                  tabindex="0"
+                >
+                  </div>
+               </section>
+      <!--================================
+              НАШЕ НАВЫКИ И СТРАТЕГИИ END
+          =================================-->
+
+      <!--================================
+                СЕРВИС 2 START
+            =================================-->
+      <section id="service" class="tf__service_2 pt_130 xs_pt_80 animation">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-9 col-lg-9 m-auto">
+              <div class="tf__section_heading mb_40">
+                <h5 class="has-animation">{{service.title}}</h5>
+                <h2 class="has-animation">
+                  {{service.description}}
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            {% for service in service_list %}
+            <div class="col-xl-4 col-md-6 col-lg-4">
+              <div class="tf__single_service_2 fade_left" data-trigerId="service">
+                <div class="text">
+                  <span class="svg-icon">
+                    <img src="{{ service.icon_class.url }}" alt="icon" />
+                  </span>                  
+                  <h3>{{ service.title }}</h3>
+                  <p>{{ service.description}}
+                  </p>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+            
+           
+          </div>
+        </div>
+      </section>
+      <!--================================
+                Сервис 2 END
+            =================================-->
+            <!--================================
+        ОТЗЫВЫ СОТРУДНИКОВ START
+    =================================-->
+    <section class="tf__testimonial pt_115 xs_pt_75">
+      <div class="container">
+        <div class="row">
+          {% for rev in review_phrases %}
+          <div class="col-xl-8 m-auto mb_30">
+            <div class="tf__section_heading">
+              <h5 class="has-animation">{{rev.title }}</h5>
+              <h2 class="has-animation">{{ rev.subtitle }}</h2>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="row testi_slider">
+          {%for rev_list in review_list %}
+          <div class="col-xl-6">
+            <div class="tf__single_testimonial">
+              <div class="img">
+                <img
+                  src="{{ rev_list.photo_experts.url }}"
+                  alt="clients"
+                  class="img-fluid w-100"
+                />
+              </div>
+              <p class="rating">
+                <i class="fa-solid fa-star-sharp"></i>
+                <i class="fa-solid fa-star-sharp"></i>
+                <i class="fa-solid fa-star-sharp"></i>
+                <i class="fa-solid fa-star-sharp"></i>
+                <i class="fa-solid fa-star-sharp"></i>
+              </p>
+              <h3>{{rev_list.full_name}}</h3>
+              <h5>{{rev_list.position}}</h5>
+              <p class="description">
+              {{rev_list.description}}
+              </p>
+            </div>
+          </div>
+          {% endfor %}
+          
+             
+            
+                      </div>
+      </div>
+    </section>
+    <!--================================
+        ОТЗЫВЫ СОТРУДНИКОВ END
+    =================================-->
+      <!--================================
+                ТОВАРЫ  START
+            =================================-->
+      <section id="portfolio" class="tf__portfolio tf__portfolio_2 mt_120 xs_mt_80">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-10 col-lg-9 mb_30">
+              <div class="tf__section_heading">
+                <h5 class="has-animation">{{goods.title}}</h5>
+                <h2 class="has-animation">
+                  {{goods.our_title}}
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+
+            {% for element in photo_goods %}
+            <div class="col-xl-6 col-sm-6">
+              <div class="tf__portfolio_item">
+                <img src="{{element.photo_goods.url}}" alt="portfolio" class="img-fluid w-100">
+                <div class="text">
+                  <h4>{{element.title}}</h4>
+                  <p> {{element.price}} </p>
+                </div>
+              </div>
+              <div class="mfp-fade mfp-hide" id="details-popup">
+                <div class="content">
+                  <div class="img">
+                    <img src="{{element.photo_goods.url}}" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          
+      <!--================================
+                ТОВАР  END
+                БЛОГ  START
+            =================================-->
+            <section id="blog" class="tf__blog_2 pt_120 xs_pt_80 pb_120 xs_pb_80">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xl-8 m-auto mb_30">
+                    <div class="tf__section_heading">
+                      <h5 class="has-animation">{{blog.title}}</h5>
+                      <h2 class="has-animation">{{blog.title_description}}</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="row animation">
+                  {% for blogging in blog_picture %}
+                  <div class="col-xl-4 col-md-6">
+                    <div class="tf__slingle_blog_2 fade_left" data-trigerId="blog">
+                      <div class="tf__blog_img_2">
+                        <img src="{{ blogging.photo_blog.url }}"  alt="blog" class="img-fluid w-100">
+                        <span> {{blogging.date_time}} </span>
+                      </div>
+                      <div class="tf__blog_text_2">
+                        <div>{{blogging.title}}</div>
+                        <p>
+                          {{blogging.blog_description}}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
+              </div>
+            </section>
+            
+      <!--================================
+                БЛОГ  END
+            =================================-->
+
+      <!--================================
+                Контакт  START
+            =================================-->
+      <section id="contact" class="tf__contact_2 pt_95 xs_pt_45">
+        <div class="container">
+          <div class="row animation">
+            {% for items in adress %}
+            <div class="col-xl-4 col-md-6 col-lg-4">
+              <div class="tf__contact_2_text fade_left" data-trigerId="contact">
+                <span>
+                  <img src="{{items.icon_class.url}}" alt="icon" />
+                </span>
+                <h3>{{items.title}}</h3>
+                <p>
+                  {{items.more}}
+                </p>
+                <a href="callto:12345664746846">{{items.contact_adress}}</a>
+              </div>
+            </div>
+            {% endfor %}
+            
+          </div>
+        </div>
+      </section>
+      <!--================================
+                Контакт  END
+            =================================-->
+              <!--================================
+                КОНТАКТ 2 START
+            =================================-->
+            <section id="contact" class="tf__contact_2 pt_95 xs_pt_45">
+              <div class="container">
+                <div class="row animation">
+                  <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div>
+                    </div>
+                  </div>
+                </div>
+            
+                <div class="contact_form_2">
+                  <form method="POST" action="">
+                    {% csrf_token %}
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                      </div>
+                      <div class="col-lg-6">
+                        <input type="text" name="surname" placeholder="Ваша Фамилия" required>
+                      </div>
+                      <div class="col-lg-12">
+                        <input type="email" name="email" placeholder="Email" required>
+                      </div>
+                      <div class="col-12">
+                        <textarea name="about_you" rows="5" placeholder="О вас" required></textarea>
+                      </div>
+                      <div class="col-12">
+                        <button type="submit">Отправить</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </section>
+            
+        <!--================================
+                КОНТАКТ 2 END
+            =================================-->
+
+      <!--================================
+                НИЖНИЙ ФОТЕР  START
+            =================================-->
+      <div class="footer_2_copyright_area mt_120 xs_mt_80">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="tf__footer_copyright">
+                <ul>
+                  <li>
+                    <a href="#" class="text_hover_animaiton">Trams & Condition</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text_hover_animaiton">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text_hover_animaiton">Sitemap</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--================================
+                НИЖНИЙ ФОТЕР  END
+            =================================-->
+
+      <!--================================
+                КНОПКА ПРОКРУТКИ START
+            =================================-->
+      <div class="progress active">
+        <svg class="progress-svg" width="100%" height="100%" viewBox="-1 -1 102 102">
+          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>
+        </svg>
+      </div>
+      <!--================================
+                КНОПКА ПРОКРУТКИ END
+            =================================-->
+      <!--================================
+        КУРСОР START
+    =================================-->
+      <div id="magic-cursor">
+        <div id="ball"></div>
+      </div>
+      <!--================================
+        КУРСОР END
+    =================================-->
+    </div>
+  </div>
+
+  <script src="{% static 'js/plugin.js'%}"></script>
+  <!--scroll button js-->
+  <script src="{% static 'js/scroll_button.js'%}"></script>
+  <!--sticky sidebar js-->
+  <script src="{% static 'js/sticky_sidebar.js'%}"></script>
+  <!-- Gsap -->
+  <script src="{% static 'js/animation.js'%}"></script>
+  <!--main/custom js-->
+  <script src="{% static 'js/main.js'%}"></script>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Ош ZYAN маркетинг</title>
+      <link rel="icon" type="image/png" href="{% static 'images/favicon.png'%}">
+      <link rel="stylesheet" href="{% static 'css/font-awesome-pro.css'%}">
+      <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+      <link rel="stylesheet" href="{% static 'css/scroll_button.css'%}">
+      <link rel="stylesheet" href="{% static 'css/spacing.css'%}">
+      <link rel="stylesheet" href="{% static 'css/plugin.css'%}">
+      <link rel="stylesheet" href="{% static 'css/style.css'%}">
+      <link rel="stylesheet" href="{% static 'css/responsive.css'%}">
+      <style>
+          .welcome-popup {
+              position: fixed;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%) scale(0);
+              background: white;
+              padding: 40px;
+              border-radius: 10px;
+              box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+              text-align: center;
+              width: 300px;
+              opacity: 0;
+              transition: transform 0.5s, opacity 0.5s;
+              z-index: 9999; /* Ensure the popup is above other content */
+          }
+          .welcome-popup.show {
+              transform: translate(-50%, -50%) scale(1);
+              opacity: 1;
+          }
+          .welcome-popup h1 {
+              margin-bottom: 20px;
+              color: #000;
+              font-size: 36px;
+          }
+          .welcome-popup p {
+              font-size: 24px;
+              color: #000;
+          }
+          .welcome-popup #username {
+              color: #000; /* Ensure the username is also black */
+          }
+      </style>
+  </head>
+  <body class="home_2">
+  
+      <!-- Приветственное всплывающее окно -->
+      <div class="welcome-popup" id="welcomePopup">
+          <h1>Добро пожаловать!</h1>
+          <p id="welcomeMessage"> <span id="username"></span></p>
+      </div>
+  
+      <script>
+          document.addEventListener('DOMContentLoaded', function() {
+              const username = localStorage.getItem('username');
+              if (username) {
+                  document.getElementById('username').textContent = username;
+              } else {
+                  document.getElementById('welcomeMessage').textContent = "Здравствуй!";
+              }
+  
+              // Показывать всплывающее окно приветствия после небольшой задержки
+              setTimeout(function() {
+                  const popup = document.getElementById('welcomePopup');
+                  popup.classList.add('show');
+                  
+                  // Скрыть всплывающее окно приветствия через 3 секунды
+                  setTimeout(function() {
+                      popup.classList.remove('show');
+                  }, 3000); // Продолжительность видимости всплывающего окна
+              }, 500); // Задержку отображения всплывающего окна можно настроить.
+  
+              // При необходимости очистите локальное хранилище после использования.
+              localStorage.removeItem('username');
+          });
+      </script>
+    </body>
+  </html>
+  
+</body>
+
+</html>
